@@ -8,7 +8,7 @@ public class ConsoleReader {
         Scanner console = new Scanner(System.in);
         System.out.println("Введите имя:");
         try {
-            if (console.nextLine().equals("Вячеслав")) {
+            if (console.nextLine().equalsIgnoreCase("Вячеслав")) {
                 System.out.println("Привет, Вячеслав");
             } else {
                 System.out.println("Нет такого имени");
