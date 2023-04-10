@@ -37,6 +37,7 @@ public class ConsoleReader {
             String numbers = console.nextLine();
             String[] num = numbers.split(",");
             int[] number = new int[num.length];
+            System.out.println("Числа кратные 3:");
             for (int i = 0; i < number.length; i++) {
                 number[i] = Integer.parseInt(num[i]);
                 if (number[i] % 3 == 0) {
