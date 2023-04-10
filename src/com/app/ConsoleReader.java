@@ -38,7 +38,7 @@ public class ConsoleReader {
             int[] number = new int[numbers.length()];
             for (int i = 0; i < numbers.length(); i++) {
                 number[i] = Integer.parseInt(numbers.substring(i, i + 1));
-                if (number[i] == 3) {
+                if (number[i] % 3 == 0) {
                     System.out.print(number[i]);
                 }
             }
