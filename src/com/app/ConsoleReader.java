@@ -20,7 +20,7 @@ public class ConsoleReader {
 
     public void getNumber() {
         Scanner console = new Scanner(System.in);
-        System.out.println("Введите номер:");
+        System.out.println("Введите число:");
         try {
             if (console.nextInt() > 7) {
                 System.out.println("Привет");
