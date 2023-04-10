@@ -35,9 +35,9 @@ public class ConsoleReader {
         System.out.println("Введите числа через запятую:");
         try {
             String numbers = console.nextLine();
-            String [] num=numbers.split(",");
-            int[] number = new int[numbers.length()];
-            for (int i = 0; i < numbers.length(); i++) {
+            String[] num = numbers.split(",");
+            int[] number = new int[num.length];
+            for (int i = 0; i < number.length; i++) {
                 number[i] = Integer.parseInt(num[i]);
                 if (number[i] % 3 == 0) {
                     System.out.println(number[i]);
