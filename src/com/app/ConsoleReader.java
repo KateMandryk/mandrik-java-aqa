@@ -32,7 +32,7 @@ public class ConsoleReader {
 
     public void getArray() {
         Scanner console = new Scanner(System.in);
-        System.out.println("Введите массив чисел:");
+        System.out.println("Введите числа:");
         try {
             String numbers = console.nextLine();
             int[] number = new int[numbers.length()];
