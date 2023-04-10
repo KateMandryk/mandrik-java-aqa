@@ -34,10 +34,10 @@ public class ConsoleReader {
         Scanner console = new Scanner(System.in);
         System.out.println("Введите массив чисел:");
         try {
-            String array = console.nextLine();
-            int[] number = new int[array.length()];
-            for (int i = 0; i < array.length(); i++) {
-                number[i] = Integer.parseInt(array.substring(i, i + 1));
+            String numbers = console.nextLine();
+            int[] number = new int[numbers.length()];
+            for (int i = 0; i < numbers.length(); i++) {
+                number[i] = Integer.parseInt(numbers.substring(i, i + 1));
                 if (number[i] == 3) {
                     System.out.print(number[i]);
                 }
