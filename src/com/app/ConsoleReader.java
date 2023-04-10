@@ -32,14 +32,15 @@ public class ConsoleReader {
 
     public void getArray() {
         Scanner console = new Scanner(System.in);
-        System.out.println("Введите числа:");
+        System.out.println("Введите числа через запятую:");
         try {
             String numbers = console.nextLine();
+            String [] num=numbers.split(",");
             int[] number = new int[numbers.length()];
             for (int i = 0; i < numbers.length(); i++) {
-                number[i] = Integer.parseInt(numbers.substring(i, i + 1));
+                number[i] = Integer.parseInt(num[i]);
                 if (number[i] % 3 == 0) {
-                    System.out.print(number[i]);
+                    System.out.println(number[i]);
                 }
             }
         } catch (Exception e) {
